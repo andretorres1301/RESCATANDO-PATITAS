@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/fontello.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="Imágenes/LOGO FINAL.png" >
+    <script src="logic.js"></script>
 </head>
 <body>    
     <header>
@@ -78,10 +79,31 @@
                     </p>
                     <button>APÓYANOS</button> 
                     <img src="Imágenes/apoyo.png" alt="">
-        
                 </div>
+                <div class = "opcion3">
+                    <div class = "mapamanual">
+                        <section class="contact-section">
+                         <h2>Ingresa direccion</h2>
+                         <form class="contact-form">
+                            <input type="text" name="name" placeholder="Provincia" required>
+                            <input type="text" name="email" placeholder="Distrito" required>
+                            <textarea name="message" placeholder="Ingresa la direccion" required></textarea>
+                            <button type="submit">USAR DIRECCIÓN</button>
+                         </form>
+                        </section>
+                    </div>
+                    <div class="mapa">
+                        <div id="map-container"></div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+                        <script > initMap()</script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+                        <button onclick="getLocation()"> COMPARTIR UBICACIÓN</button>
+                    </div>
+                </div>   
             </div>
         </section>
+       
+        
 
         <div class="footer">
             <div class="contacto">
